@@ -5,3 +5,6 @@ from datetime import datetime
 
 def acceuil(request):
     return render(request, 'front/acceuil.html', locals())
+
+def coordonnees(request):
+    return render(request, 'front/coordonnees.html', locals())
