@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background-color: #291408;
+    font-family: 'Oswald', sans-serif;
+    color: #D6D6D2;
+}
+
+header{
+    display:inline-block;
+    vertical-align: top;
+    width: 20%;
+    float: left;
+}
+
+/*
+#header{
+    display: flex;
+}
+*/
+
+img.logo{
+
+    display:inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 30%
+    opacity: 0.8;
+    z-index: 1;
+}
+
+nav{
+    display:inline-block;
+    vertical-align: top;
+    width: 80%;
+    float: left;
+    margin-top: 17px;
+
+}
+
+h1.titre {
+    display: inline-block;
+    color: #E0A904;
+    float: left;
+    text-align: right;
+    z-index: 2;
+
+
+}
+h1.titre_suite {
+    display: inline-block;
+    float: left;
+    color: #E0A904;
+    font-size-adjust: auto;
+
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #D6C07C;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.sidenav li a.active {
+    background-color: #3FCF06;
+    color: #000;
+}
+
+ul.sidenav li a:hover {
+    background-color: #555;
+    color: #D6C07C;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+
+section.metier{
+    font-size: 60%;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+@media screen {
+    ul.sidenav {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+}
+
+@media screen and (max-width: 400px){
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}

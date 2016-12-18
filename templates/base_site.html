@@ -3,15 +3,21 @@
 
 {% block title_page %} AGlec {% endblock %}
 
-{% block title %} AGlec {% endblock %}
+{% block title %}
 
-{% block metier %} Electicité Géneral {% endblock %}
+<img class="logo" src="/static/image/Logo.png" alt="Logo de l'entreprise" />
+<a href="{% url "home" %}"
+  <h1 class="titre">AG</h1><h1 class="titre_suite">elec</h1>
+>
+{% endblock %}
+
+{% block metier %} <h2>Electicité Géneral<h2>{% endblock %}
 
 {% block nav %}
-<ul>
-  <li><a href="{% url "home" %}">Accueil</a></li>
+<ul class="sidenav">
+  <li><a class="active" href="{% url "home" %}">Accueil</a></li>
   <li><a href="{% url "coord" %}">Coordonnées</a></li>
-  <li><a href="/contact/">Contact</a></li>
+  <li><a href="{% url "cont" %}">Contact</a></li>
 </ul>
 {% endblock %}
 

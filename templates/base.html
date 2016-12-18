@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <link rel="stylesheet" href="/media/css/style.css" />
+   <link rel="stylesheet" href="/static/css/style.css" />
    <title>{% block title_page %}TitrePage{% endblock %}</title>
 </head>
 <body>
@@ -11,12 +11,12 @@
        Navigation
        {% endblock %}
    </nav>
-   <section id="metier">
+   <section class="metier" id="metier">
        {% block metier %}Metier{% endblock %}
    </section>
    <section id="content">
        {% block content %}texte a mettre{% endblock %}
    </section>
-<footer>&copy; {% block footer %}Footer{% endblock %}</footer>
+<footer id=footer>&copy; {% block footer %}Footer{% endblock %}</footer>
 </body>
 </html>
