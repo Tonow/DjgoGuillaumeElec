@@ -5,10 +5,14 @@
 
 {% block title %}
 
-<img class="logo" src="/static/image/Logo.png" alt="Logo de l'entreprise" />
+<!-- <h1 class="titre">AG</h1><h1 class="titre_suite">elec</h1> -->
 <a href="{% url "home" %}"
-  <h1 class="titre">AG</h1><h1 class="titre_suite">elec</h1>
+
 >
+  <img class="logo" src="/static/image/LogoTitre.png" alt="AGelec" />
+
+</a>
+
 {% endblock %}
 
 {% block metier %} <h2>Electicité Géneral<h2>{% endblock %}
@@ -21,4 +25,8 @@
 </ul>
 {% endblock %}
 
-{% block footer %} 2016  {% endblock %}
+{% block footer %}
+<div>
+&copy;  2016
+</div>
+{% endblock %}

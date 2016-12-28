@@ -1,43 +1,34 @@
 body {
     margin: 0;
-    background-color: #291408;
+    background-color: #1e1e1e;
     font-family: 'Oswald', sans-serif;
-    color: #D6D6D2;
+    color: #f3ecd8;
+    background-image: url("/static/image/Header1.png");
+    background-repeat: no-repeat;
+    background-position: center top;;
+    background-attachment: fixed;
+    background-size: 100% 50%;
 }
 
-header{
-    display:inline-block;
-    vertical-align: top;
-    width: 20%;
-    float: left;
-}
 
-/*
-#header{
-    display: flex;
-}
-*/
 
 img.logo{
-
-    display:inline-block;
+    margin-left: 10px;
     vertical-align: top;
-    width: 30%;
-    height: 30%
+    width: 70%;
+    height: 70%
     opacity: 0.8;
     z-index: 1;
 }
 
 nav{
-    display:inline-block;
     vertical-align: top;
-    width: 80%;
     float: left;
     margin-top: 17px;
 
 }
 
-h1.titre {
+/*h1.titre {
     display: inline-block;
     color: #E0A904;
     float: left;
@@ -52,14 +43,14 @@ h1.titre_suite {
     color: #E0A904;
     font-size-adjust: auto;
 
-}
+}*/
 
 ul.sidenav {
     list-style-type: none;
-    margin: 0;
+    margin-top: 7%;
     padding: 0;
     width: 25%;
-    background-color: #D6C07C;
+    background-color: #f3ecd8;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -79,7 +70,7 @@ ul.sidenav li a.active {
 
 ul.sidenav li a:hover {
     background-color: #555;
-    color: #D6C07C;
+    color: #f3ecd8;
 }
 
 div.content {
@@ -90,25 +81,110 @@ div.content {
 
 
 section.metier{
+    display: block;
     font-size: 60%;
     margin-top: 20px;
-    margin-left: auto;
+    margin-left: 40%;
 }
+
+section.content{
+    clear: left;
+    float: left;
+    display: block;
+    margin-top: 20px;
+}
+
+footer{
+    width: 70%;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    background-image: url("/static/image/Footer1.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    display: inline;
+    border: 1px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+footer.footer{
+    text-align: center;
+    font-size: 50%;
+}
+
+
+
+
+
 
 @media screen {
     ul.sidenav {
         width:100%;
         height:auto;
         position:relative;
+        border-radius: 6px;
     }
     ul.sidenav li a {
         float: left;
         padding: 15px;
     }
     div.content {margin-left:0;}
+
+    section.content{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    header{
+        margin-left: 20%;
+        width: 20%;
+        float: left;
+    }
+
+    nav{
+        width: 45%;
+        margin-right: 15%;
+    }
 }
 
+
+
+
+
+
 @media screen and (max-width: 400px){
+
+    header{
+        margin-left: 1%;
+        width: 100%;
+        float: left;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    img.logo{
+        margin-left: 25%;
+        vertical-align: top;
+        width: 45%;
+        height: 40%
+        opacity: 0.8;
+    }
+
+    section.content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    section.metier{
+        margin-left: 25%;
+    }
+
     ul.sidenav li a {
         text-align: center;
         float: none;

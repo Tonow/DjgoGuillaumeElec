@@ -11,12 +11,12 @@
        Navigation
        {% endblock %}
    </nav>
-   <section class="metier" id="metier">
+   <section class="metier" >
        {% block metier %}Metier{% endblock %}
    </section>
-   <section id="content">
+   <section class="content">
        {% block content %}texte a mettre{% endblock %}
    </section>
-<footer id=footer>&copy; {% block footer %}Footer{% endblock %}</footer>
+<footer class="footer"> {% block footer %}Footer{% endblock %}</footer>
 </body>
 </html>
