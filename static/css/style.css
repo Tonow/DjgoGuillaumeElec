@@ -213,7 +213,15 @@ footer.footer{
     }
 
     body{
-        font-size: 600%;
+        font-size: 300%;
+    }
+
+    input{
+        height: 30px;
+    }
+
+    button{
+        font-size: 30px;
     }
 
     header{
