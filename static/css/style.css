@@ -46,6 +46,17 @@ h1.titre_suite {
 }*/
 
 
+a {
+text-decoration: underline;;
+color: #f3ecd8;
+}
+
+a:hover {
+text-decoration: none;
+color: #3FCF06;
+}
+
+
 ul.sidenav {
     list-style-type: none;
     margin-top: 7%;
