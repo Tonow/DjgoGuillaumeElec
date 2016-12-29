@@ -207,6 +207,15 @@ footer.footer{
 @media only screen and (min-device-width : 300px) and (max-device-width : 500px) {
     /* For mobile phones: */
 
+    img {
+    width: 100%;
+    height: auto;
+    }
+
+    body{
+        font-size: 600%;
+    }
+
     header{
         margin-left: 1%;
         width: 100%;
