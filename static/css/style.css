@@ -2,12 +2,12 @@ body {
     margin: 0;
     background-color: #1e1e1e;
     font-family: 'Oswald', sans-serif;
-    color: #f3ecd8;
-    background-image: url("/static/image/Header1.png");
+    color: #1e1e1e;
+    background-image: url("/static/image/energies-renouvelables-fond.jpg");
     background-repeat: no-repeat;
     background-position: center top;;
     background-attachment: fixed;
-    background-size: 100% 50%;
+    background-size: 100% 100%;
 }
 
 
@@ -94,9 +94,11 @@ div.content {
 
 section.metier{
     display: block;
-    font-size: 60%;
+    font-size: 90%;
     margin-top: 20px;
     margin-left: 40%;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 
 section.content{
