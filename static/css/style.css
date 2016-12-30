@@ -186,7 +186,9 @@ footer.footer{
     }
 
     section.metier{
-        margin-left: 25%;
+        font-size: 65%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     ul.sidenav li a {
@@ -245,7 +247,9 @@ footer.footer{
     }
 
     section.metier{
-        margin-left: 25%;
+        font-size: 65%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     ul.sidenav li a {
