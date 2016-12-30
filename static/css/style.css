@@ -80,7 +80,8 @@ section.metier{
     display: block;
     font-size: 90%;
     margin-top: 20px;
-    margin-left: 40%;
+    margin-left: 35%;
+    margin-right: 20%;
     padding-left: 10%;
     padding-top: 10%;
 }
@@ -121,7 +122,7 @@ footer.footer{
 
 @media screen {
     ul.sidenav {
-        width:100%;
+        width:320px;
         height:auto;
         position:relative;
         border-radius: 6px;
@@ -138,13 +139,13 @@ footer.footer{
     }
 
     header{
-        margin-left: 20%;
+        margin-left: 25%;
         width: 20%;
         float: left;
     }
 
     nav{
-        width: 45%;
+        width: 40%;
         margin-right: 15%;
     }
 }
