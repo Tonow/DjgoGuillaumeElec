@@ -27,6 +27,8 @@ SECRET_KEY = 'o=cx9$a87d#*ax$knsg5w!=!obk50^wbt+a$+bw6kp7@*q)v6t'
 DEBUG = False
 #DEBUG = True
 
+
+#Modif entre prod ou local
 ALLOWED_HOSTS = ["192.168.0.126", "82.228.61.73"]
 #ALLOWED_HOSTS = []
 
