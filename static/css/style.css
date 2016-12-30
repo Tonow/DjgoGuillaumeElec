@@ -28,27 +28,10 @@ nav{
 
 }
 
-/*h1.titre {
-    display: inline-block;
-    color: #E0A904;
-    float: left;
-    text-align: right;
-    z-index: 2;
-
-
-}
-h1.titre_suite {
-    display: inline-block;
-    float: left;
-    color: #E0A904;
-    font-size-adjust: auto;
-
-}*/
-
 
 a {
-text-decoration: underline;;
-color: #f3ecd8;
+text-decoration: underline;
+color: #1e1e1e;
 }
 
 a:hover {
@@ -93,6 +76,7 @@ div.content {
 
 
 section.metier{
+    text-decoration: underline;
     display: block;
     font-size: 90%;
     margin-top: 20px;
