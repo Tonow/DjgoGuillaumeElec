@@ -110,6 +110,12 @@ footer{
     margin-left: 5%;
 }
 
+iframe{
+    margin-left: inherit;
+    margin-right: inherit;
+    width: 100%
+}
+
 footer.footer{
     text-align: center;
     font-size: 50%;
@@ -180,6 +186,12 @@ footer.footer{
         opacity: 0.8;
     }
 
+    iframe{
+        margin-left: 1px;
+        margin-right: inherit;
+        width: 100%
+    }
+
     section.content{
         margin-left: 5%;
         margin-right: 5%;
@@ -205,6 +217,7 @@ footer.footer{
     width: 100%;
     height: auto;
     }
+
 
     body{
         font-size: 300%;
