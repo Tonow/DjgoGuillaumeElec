@@ -1,0 +1,32 @@
+> CREATE DATABASE guillaumeElecdb;
+> CREATE USER 'thomas'@'localhost' IDENTIFIED BY 'Cr@y0n!Vert'; 
+> GRANT ALL PRIVILEGES ON myprojectdb.* TO 'thomas'@'localhost';
+> FLUSH PRIVILEGES;
+
+
+
+
+
+DROP DATABASE IF EXISTS 'guillaumeElec';
+CREATE DATABASE 'guillaumeElec'
+    DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_general_ci;
+
+USE 'mysql';
+GRANT ALL PRIVILEGES ON mydb.* TO 'thomas'@'localhost' IDENTIFIED BY 'Cr@y0n!Vert';
+
+WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mydb',                  
+        'USER': 'mydb_user',             
+        'PASSWORD': 'your_password',                  
+        'HOST': '',                     
+        'PORT': '',                      
+    }
+}
