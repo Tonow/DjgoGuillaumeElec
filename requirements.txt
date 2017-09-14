@@ -1,0 +1,5 @@
+Django>=1.8,<2.0
+psycopg2
+django-suit==0.2.23
+django-import-export
+pytz
