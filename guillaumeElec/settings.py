@@ -24,14 +24,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'o=cx9$a87d#*ax$knsg5w!=!obk50^wbt+a$+bw6kp7@*q)v6t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
 
 
 #Modif entre prod ou local
-ALLOWED_HOSTS = ["192.168.0.126", "82.228.61.73"]
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ["192.168.0.126", "82.228.61.73"]
+ALLOWED_HOSTS = []
 
 
 
@@ -85,28 +85,26 @@ WSGI_APPLICATION = 'guillaumeElec.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-"""
-DATABASES = {
-    'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'guillaumeElec',
-    'USER':'thomas',
-    'PASSWORD':'Cr@y0n!Vert',
-    'HOST':'localhost',
-    'PORT':'',
-    }
-}
-"""
-
-
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'guillaumeelec',
+        'USER': 'thomas',
+        'PASSWORD': 'BaseT0Base',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
 
 
 
