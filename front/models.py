@@ -9,7 +9,7 @@ class Contacte(models.Model):
     ville = models.CharField(max_length=90 , null=False)
     rue = models.CharField(max_length=120 , null=False)
     numero_de_la_voie = models.PositiveIntegerField( null=False)
-    code_postal = models.IntegerField(max_length=5 , validators=[RegexValidator(regex='^\d{5}$', message='Veuiller donner un code postal valide', code='Invalid postal')] , null=False)
+    code_postal = models.IntegerField(validators=[RegexValidator(regex='^\d{5}$', message='Veuiller donner un code postal valide', code='Invalid postal')] , null=False)
     mail = models.EmailField( blank=True)
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
                                 verbose_name="Date de la demende")
